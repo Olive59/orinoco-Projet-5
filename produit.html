@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords"
+        content="orinoco, ours en peluche, peluche, vente en ligne, faits à la main, qualité francaise">
+    <meta name="description" content="Vente en ligne d'ours en peluche faits à la main de qualité Française.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="all">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/.jpg" href="favicon.jpg">
+    <title>Orinoco</title>
+</head>
+
+<body onload="checkPanier();">
+
+    <div id="pages">
+        <div class="bloc-a">
+            <div class="colonne">
+                <i class="fas fa-paw trace"></i>
+                <i class="fas fa-paw trace"></i>
+            </div>
+        </div>
+
+        <div class="bloc-b">
+            <div class="bar-top"></div>
+            <a href="index.html">
+                <header>
+                    <figure class="logo">
+                        <img class="logo logo-desktop" src="images/orinoco.png" alt="logo d'orinoco">
+                    </figure>
+                    <figure class="logo">
+                        <img class="logo logo-tablette" src="images/orinoco_medium.jpg" alt="logo d'orinoco">
+                    </figure>
+                    <figure class="logo">
+                        <img class="logo logo-responsive" src="images/orinoco_mini.jpg" alt="logo d'orinoco">
+                    </figure>
+                </header>
+            </a>
+
+            <div class="bar-bottom ">
+                <div class="icone-effect">
+                    <a href="index.html">
+                        <i class="fas fa-home icone"></i>
+                        <h3>Accueil</h3>
+                    </a>
+                </div>
+
+                <div class="icone">
+                    <i class="fas fa-paw"></i>
+                </div>
+
+                <div class="icone-effect icone-effect-panier">
+                    <a href="panier.html" id="linkPanier">
+                        <i class="fas fa-shopping-cart icone panier "></i>
+                        <p class="nombre-panier cart"><span id="nombrePanier"></span></p>
+                        <h3>Panier</h3>
+                    </a>
+                </div>
+            </div>
+
+            <h1 class="titre-teddy"> Votre sélection </h1>
+            <div class="boxProductTeddy">
+                <div id="productTeddy"></div>
+            </div>
+
+
+
+            <h2 id='margeTitle'>Mais aussi...</h2>
+            <div id="maisAussi"></div>
+
+
+
+        </div>
+
+        <div class="bloc-c">
+            <div class="colonne">
+                <i class="fas fa-paw trace"></i>
+                <i class="fas fa-paw trace"></i>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="bloc-footer">
+            <div class="icone-effect">
+                <a href="https://facebook.com" aria-label="logo de facebook">
+                    <i class="fab fa-facebook-square icone-footer"></i>
+                    <h3>Facebook</h3>
+                </a>
+            </div>
+            <div class="icone-effect">
+                <a href="https://twitter.com" aria-label="logo de twitter">
+                    <i class="fab fa-twitter icone-footer"></i>
+                    <h3>twitter</h3>
+                </a>
+            </div>
+            <div class="icone-effect">
+                <a href="https://instagram.com" aria-label="logo de instagram">
+                    <i class="fab fa-instagram icone-footer"></i>
+                    <h3>Instagram</h3>
+                </a>
+            </div>
+            <div class="icone-effect">
+                <a href="mailto:Carkass@gmail.com" aria-label="mail">
+                    <i class="fas fa-envelope icone-footer"></i>
+                    <h3>Mail</h3>
+                </a>
+            </div>
+        </div>
+        <p>Copyright 2020 Orinoco</p>
+    </footer>
+    <script src="js/global.js"></script>
+    <script src="js/produit.js"></script>
+</body>
+
+</html>

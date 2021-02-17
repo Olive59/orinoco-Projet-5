@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords"
+        content="orinoco, ours en peluche, peluche, vente en ligne, faits à la main, qualité francaise">
+    <meta name="description" content="Vente en ligne d'ours en peluche faits à la main de qualité Française.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="all">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/.jpg" href="favicon.jpg">
+    <title>Orinoco</title>
+</head>
+
+<body onload="checkPanier();">
+
+    <div id="pages">
+        <div class="bloc-a">
+            <div class="colonne">
+                <i class="fas fa-paw trace"></i>
+                <i class="fas fa-paw trace"></i>
+            </div>
+        </div>
+
+        <div class="bloc-b">
+            <a href="index.html">
+                <div class="bar-top"></div>
+                <header>
+                    <figure class="logo">
+                        <img class="logo logo-desktop" src="images/orinoco.png" alt="logo d'orinoco">
+                    </figure>
+                    <figure class="logo">
+                        <img class="logo logo-tablette" src="images/orinoco_medium.jpg" alt="logo d'orinoco">
+                    </figure>
+                    <figure class="logo">
+                        <img class="logo logo-responsive" src="images/orinoco_mini.jpg" alt="logo d'orinoco">
+                    </figure>
+                </header>
+            </a>
+
+            <div class="bar-bottom ">
+                <div class="icone-effect">
+                    <a href="index.html">
+                        <i class="fas fa-home icone"></i>
+                        <h3>Accueil</h3>
+                    </a>
+                </div>
+
+                <div class="icone">
+                    <i class="fas fa-paw"></i>
+                </div>
+
+                <div class="icone-effect icone-effect-panier">
+                    <a href="panier.html" id="linkPanier">
+                        <i class="fas fa-shopping-cart icone panier "></i>
+                        <p class="nombre-panier cart"><span id="nombrePanier" class="nombreModif"></span></p>
+                        <h3>Panier</h3>
+                    </a>
+                </div>
+            </div>
+
+            <h1 class="titre titre-panier"> Votre panier </h1>
+            <section id="contenair-panier">
+            <div class="products-container">
+                <div class="product-header">
+                    <h5 class="product-title">PRODUITS</h5>
+                    <h5 class="price">PRIX</h5>
+                    <h5 class="quantity">QUANTITÉ</h5>
+                    <h5 class="total">TOTAL</h5>
+                </div>
+                <div id="produitsPanier"></div>
+                <div class="totalForm">
+                    <p class="totalPanier">Total</p>
+                    <div id="totalPanier"></div>
+                </div>
+            </div>
+            <div class="retourProduit">
+                <a href="mentions-legales.html" class='btnShowIndex'>Mentions légales</a>
+                <a href="produit.html" class='btnShowIndex'>Un autre Teddy ?</a>
+            </div>
+
+            <div id="formFormulaire">
+                <form id="formulaire" validate>
+                    <fieldset>
+                        <legend>Vos coordonnées</legend>
+                        <label for="lastName">Nom*</label>
+                        <input id="lastName" type="text" name="lastName" class="formValid" placeholder="Nom" required
+                            pattern="[A-Za-z \-'À-ÿ]{2,102}">
+
+                        <label for="firstName">Prénom*</label>
+                        <input id="firstName" type="text" name="firstName" class="formValid" placeholder="Prénom" required
+                            pattern="[A-Za-z \-'À-ÿ]{2,102}">
+
+                        <label for="address">Adresse*</label>
+                        <textarea id="address" name="address" placeholder="Adresse" class="formValid" required
+                            pattern="[\wÀ-ÿ /\-',]{2,300}"></textarea>
+
+                        <label for="city">Ville*</label>
+                        <input id="city" type="text" name="city" class="formValid" placeholder="Ville" required
+                            pattern="[\wÀ-ÿ \-',]{2,300}">>
+                        <span class='error-ville'></span>
+
+                        <label for="email">Email*</label>
+                        <input id="email" type="email" class="formValid" required name="email" placeholder="email">
+
+                        <p>* Champs obligatoire !!!</p>
+                        <button class="reset" type="reset">Effacer</button>
+
+                        <button type='submit' id="confirmation">Validez votre commande</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="bloc-c">
+            <div class="colonne">
+                <i class="fas fa-paw trace"></i>
+                <i class="fas fa-paw trace"></i>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer>
+        <div class="bloc-footer">
+            <div class="icone-effect">
+                <a href="https://facebook.com" aria-label="logo de facebook">
+                    <i class="fab fa-facebook-square icone-footer"></i>
+                    <h3>Facebook</h3>
+                </a>
+            </div>
+            <div class="icone-effect">
+                <a href="https://twitter.com" aria-label="logo de twitter">
+                    <i class="fab fa-twitter icone-footer"></i>
+                    <h3>twitter</h3>
+                </a>
+            </div>
+            <div class="icone-effect">
+                <a href="https://instagram.com" aria-label="logo de instagram">
+                    <i class="fab fa-instagram icone-footer"></i>
+                    <h3>Instagram</h3>
+                </a>
+            </div>
+            <div class="icone-effect">
+                <a href="mailto:Carkass@gmail.com" aria-label="mail">
+                    <i class="fas fa-envelope icone-footer"></i>
+                    <h3>Mail</h3>
+                </a>
+            </div>
+        </div>
+        <p>Copyright 2020 Orinoco</p>
+    </footer>
+    <script src="js/global.js"></script>
+    <script src="js/panier.js"></script>
+</body>
+
+</html>
