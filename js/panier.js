@@ -39,18 +39,17 @@ for (let i = 0; i < panierJson.length; i++) {
 
                 // affichage du panier
                 var produitsPanier = document.getElementById("produitsPanier");
-                produitsPanier.innerHTML = `
-                    <div class='fichePanier fichePanier" ${product._id}'>
-                    <figure><img id='imgPanier' src=" ${product.imageUrl} "></figure>
+                produitsPanier.innerHTML += `
+                    <div class='fichePanier fichePanier' ${product._id}>
+                    <figure><img id='imgPanier' src= ${product.imageUrl}></figure>
                     <p class='responsiveName'> ${product.name} </p>
                     <p class='responsivePrice'> ${prixEuros} .00€</p>
-                    <p class='affichage' id='affichage ${product._id}'> ${panierJson[i].qty} </p>
-                    <p id='priceLine ${product._id}'>  ${prixLigne}.00€</p>
-                    <i onclick='deleteLine(\" ${product._id} \")' id='close' class='fas fa-times-circle close formItem '></i>
+                    <p class='affichage' id='affichage' ${product._id}> ${panierJson[i].qty}</p>
+                    <p id='priceLine' ${product._id}>  ${prixLigne}.00€</p>
+                    <i onclick='deleteLine ("${product._id}")' id='close' class='fas fa-times-circle close formItem'></i>
                     `
-                {/* prix Total du panier dans le localStorage */}
+                /* prix Total du panier dans le localStorage */
                 localStorage.setItem('prixTotal', prixTotal);
-           
             }
         })
         .catch(function (req) {
