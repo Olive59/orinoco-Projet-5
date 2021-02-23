@@ -42,7 +42,6 @@ for (let i = 0; i < panierJson.length; i++) {
                 produitsPanier.innerHTML += `
                     <div class='fichePanier fichePanier' ${product._id}>
                     <figure><img id='imgPanier' src= ${product.imageUrl}></figure>
-                    <p class='responsiveName'> ${product.name} </p>
                     <p class='responsivePrice'> ${prixEuros} .00€</p>
                     <p class='affichage' id='affichage' ${product._id}> ${panierJson[i].qty}</p>
                     <p id='priceLine' ${product._id}>  ${prixLigne}.00€</p>

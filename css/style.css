@@ -257,7 +257,6 @@ h4 {
     box-shadow: 5px 5px 2px #333;
     border-radius: 15px;
     margin: auto;
-
 }
 
 .btnShowIndex {
@@ -494,7 +493,7 @@ legend {
 .fichePanier {
     display: flex;
     justify-content: space-around;
-    
+    flex-wrap: wrap;    
 }
 
 .fichePanier p {
@@ -541,7 +540,9 @@ legend {
 
 .container-products {
     max-width: 650px;
+    display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -555,8 +556,7 @@ legend {
     margin: 0 auto;
 }
 
-.product-title {
-    width: 45%;
+.product-title {   
     text-align: center;
 }
 
@@ -565,21 +565,21 @@ legend {
 }
 
 .price {
-    width: 10%;
+   
     display: flex;
     align-items: center;
     text-align: center;
 }
 
 .quantity {
-    width: 15%;
+   
     display: flex;
     align-items: center;
     text-align: center;
 }
 
 .total {
-    width: 10%;
+   
     display: flex;
     align-items: center;
     text-align: center;

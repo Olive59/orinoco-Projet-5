@@ -15,7 +15,7 @@ getFromAPI("http://localhost:3000/api/teddies/" + id)
       <figure><img alt='peluches' class='imageProduit' src=" ${product.imageUrl} "></figure>
       <h2 class='produitH2' > ${product.name}</h2>
       <div class='titleProduit'><p>D<u>escription</u></p><p class='infoProduit'>${product.description}</div></p>
-      <div class='titleProduit'><P>P<u>rix</u></><p class='infoProduit'>${product.price / 100}+ ",00€</div></p>
+      <div class='titleProduit'><P>P<u>rix</u></><p class='infoProduit'>${product.price / 100},00€</div></p>
       <div class='selectColor' id='choixCouleur'><label for='options'><p class='titleProduit'>C<u>hoisissez votre couleur</u></p></label></div>
       <div idOurs='id' class='titleProduit' name='id'><p>R<u>éférence</u></p><p class='infoProduit infoMargin'>${product._id}</div></p>
       <a id='ajouter' data-id='5be9c8541c9d440000665243' class='add-cart' href='#'>Ajouter au panier</a>" +
