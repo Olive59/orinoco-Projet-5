@@ -31,7 +31,6 @@ function postToAPI(url, product) {
     req.setRequestHeader("Content-Type", "application/json");
     req.send(JSON.stringify(product));
   })
-
 }
 
 function checkPanier() {

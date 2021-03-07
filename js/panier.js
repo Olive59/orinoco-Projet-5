@@ -81,7 +81,7 @@ document.getElementById("formulaire").addEventListener("submit", (event) => { //
     // recuperer le panier en session    
     var panier = localStorage.getItem('panier');
     panierJson = JSON.parse(panier);
-    // tableau vide recuperer les ID avec une boucle Array + push JSON.stringify + stocker dans une variable
+    // tableau vide recuperer les ID 
     var products = [];
     for (let i = 0; i < panierJson.length; i++) {
         products.push(panierJson[i].id);
